@@ -4,6 +4,8 @@
 
 Above image is an analytic tool I ran called wandb (Weights and Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
+# Download yt8m dataset
+
 The total size of the frame-level features is 1.53 Terabytes. They are broken into 3844 shards which can be subsampled to reduce the dataset size. 
 
 To download the Frame-level dataset using the download script, navigate your terminal to a directory where you would like to download the data. For example:
