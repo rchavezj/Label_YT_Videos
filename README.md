@@ -5,6 +5,8 @@
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_img/pytorch_results_pt_3.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_img/pytorch_results_pt_4.png)
 
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_img/keras_report.png)
+
 Above are graphs I gathered from the app wandb (Weights and Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
 # Download yt8m dataset
