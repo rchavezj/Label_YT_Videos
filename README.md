@@ -2,7 +2,7 @@
 
 Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using ResNext/Resnet/InceptionV4 to extract spatial features (pixels) and LSTM/GRU to encode sequential strings (audio) through word embedding. Both algorithms later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainmen, etc.)
 
-## Wandb Results
+## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
