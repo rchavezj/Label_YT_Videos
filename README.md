@@ -1,8 +1,11 @@
 # Label_YT_Videos
 
-![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/pytorch_results_v1.png "Pytorch Results")
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/pytorch_results_pt_1.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/pytorch_results_pt_2.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/pytorch_results_pt_3.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/pytorch_results_pt_4.png)
 
-Above image is an analytic tool I ran called wandb (Weights and Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
+Above are graphs I gathered from the app wandb (Weights and Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
 # Download yt8m dataset
 
