@@ -10,8 +10,7 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 
 Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
-## Best Deep Learning Model: 
-## Neural Net + Stream LSTM Concatenated (Tensorboard)
+## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
