@@ -11,7 +11,7 @@ The total size of the frame-level features is 1.53 Terabytes. They are broken in
 To download the Frame-level dataset using the download script, navigate your terminal to a directory where you would like to download the data. For example:
 
 ```console
-mkdir -p ~/data/yt8m/frame; cd ~/data/yt8m/frame
+mkdir -p ~/v2/yt8m/frame; cd ~/v2/yt8m/frame
 ```
 Then download the training and validation data. Note: Make sure you have 1.53TB of free disk space to store the frame-level feature files. Download the entire dataset as follows:
 
@@ -25,7 +25,7 @@ The total size of the video-level features is 31 Gigabytes. They are broken into
 
 To download the Video-level dataset using the download script, navigate your terminal to a directory where you would like to download the data. For example:
 ```console
-mkdir -p ~/data/yt8m/video; cd ~/data/yt8m/video 
+mkdir -p ~/v2/yt8m/video; cd ~/v2/yt8m/video 
 ```
 Then download the training and validation data. Note: Make sure you have 31GB of free disk space to store the video-level feature files. Download the entire dataset as follows:
 ```console
