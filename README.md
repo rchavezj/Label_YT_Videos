@@ -10,10 +10,12 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 
 Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
-| Loss      | Accuracy | GPU usage    |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+|                                  | Lost         |  Accuracy    |   GPU Usage  |   CPU Usage  |
+| :---:                            |    :----:    |    :---:     |    :----:    |    :----:    |
+| Neural Net                       |    Title     |    Here's    |    Here's    |    Here's    |
+| Multi-Bidirectional LSTM         |    Text      |   And more   |    And more  |   And more   |
+| Stream LSTM                      |    Text      |   And more   |   And more   |   And more   |
+| Neual Net + Stream LSTM Concat   |    Text      |   And more   |   And more   |   And more   |
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
@@ -50,28 +52,3 @@ curl data.yt8m.org/download.py | partition=2/video/test mirror=us python
 ```
 
 The above uses the us mirror. If you are located in Europe or Asia, please swap the mirror flag us with eu or asia, respectively.
-
-## Process data into a program
-
-Below is a snippit of code to process video-level data that has been download withn your directory. Same process is done for frame-level data with a few syntax changes. Full code for the project is under code directory. 
-
-```python
-# Video: Trained labels
-fileNumber = 0
-vid_ids_train = []
-mean_rgb_train = []
-mean_audio_train = []
-video_labels_train = []
-for file in video_files_train:
-    print("fileNumber: ", fileNumber)
-    fileNumber += 1
-    for example in tf.python_io.tf_record_iterator(file):
-        tf_example = tf.train.Example.FromString(example)
-        vid_ids_train.append(tf_example.features.feature['id'].bytes_list.value[0].decode(encoding='UTF-8'))
-        video_labels_train.append(tf_example.features.feature['labels'].int64_list.value)
-        mean_rgb_train.append(tf_example.features.feature['mean_rgb'].float_list.value)
-        mean_audio_train.append(tf_example.features.feature['mean_audio'].float_list.value)
-mean_rgb_train = array(mean_rgb_train)
-mean_audio_train = array(mean_audio_train)
-```
-
