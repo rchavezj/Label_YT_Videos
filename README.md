@@ -52,6 +52,9 @@ curl data.yt8m.org/download.py | partition=2/video/test mirror=us python
 The above uses the us mirror. If you are located in Europe or Asia, please swap the mirror flag us with eu or asia, respectively.
 
 ## Process data into a program
+
+Below is a snippit of code to process video-level data that has been download withn your directory. Same process is done for frame-level data with a few syntax changes. Full code for the project is under code directory. 
+
 ```python
 # Video: Trained labels
 fileNumber = 0
