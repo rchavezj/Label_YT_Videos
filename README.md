@@ -10,12 +10,12 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 
 Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
-|                                  | Lost         |  Accuracy    |   GPU Usage  |   CPU Usage  |
-| :---:                            |    :----:    |    :---:     |    :----:    |    :----:    |
-| Neural Net                       |    Title     |    Here's    |    Here's    |    Here's    |
-| Multi-Bidirectional LSTM         |    Text      |   And more   |    And more  |   And more   |
-| Stream LSTM                      |    Text      |   And more   |   And more   |   And more   |
-| Neual Net + Stream LSTM Concat   |    Text      |   And more   |   And more   |   And more   |
+|                                  | Lost         |  Accuracy    |   GPU Usage  |   CPU Usage  |   System Memory  |
+| :---:                            |    :----:    |    :---:     |    :----:    |    :----:    |    :----:        |
+| Neural Net                       |    Title     |    Here's    |    Here's    |    Here's    |    Here's        |
+| Multi-Bidirectional LSTM         |    Text      |   And more   |    And more  |   And more   |   And more       |
+| Stream LSTM                      |    Text      |   And more   |   And more   |   And more   |   And more       |
+| Neual Net + Stream LSTM Concat   |    Text      |   And more   |   And more   |   And more   |   And more       |
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
