@@ -52,7 +52,7 @@ curl data.yt8m.org/download.py | partition=2/video/test mirror=us python
 The above uses the us mirror. If you are located in Europe or Asia, please swap the mirror flag us with eu or asia, respectively.
 
 ## Process data into a program
-```console
+```python
 # Video: Trained labels
 fileNumber = 0
 vid_ids_train = []
