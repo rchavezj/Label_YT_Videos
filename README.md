@@ -1,4 +1,4 @@
-# Label_YT_Videos
+# Classifying Video Labels from Youtube
 
 Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using ResNext/Resnet/InceptionV4 to extract spatial features (pixels) and LSTM/GRU to encode sequential strings (audio) through word embedding. Both algorithms later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainmen, etc.)
 
@@ -9,6 +9,22 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_4.png)
 
 Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
+
+### Pytorch Report
+|                                  | Loss     |  Accuracy  | Learn Rate | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
+| :---:                            |  :----:  |    :---:   |  :----:    |    :---:   |    :----:    |    :----:    |    :----:        |
+| Neural Net                       |  1.75%    |    45%    |    0.01    |     30     |    29%       |    15.31%    |    13.89%        |
+| Multi-Bidirectional LSTM         |  7.89%   |    64%     |    0.003   |     64     |    55%       |    12.65%    |    12.26%        |
+| Stream LSTM                      |  7.98%   |    64%     |    0.03    |     64     |     0%       |     97%      |     70.60%       |
+| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |  0.00045   |     64     |   24.13%     |   12.67%     |     16.49%       |
+
+### Keras Report
+|                                  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
+| :---:                            |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:        |
+| Neural Net                       |  68.5%   |    66.5%   |   300   |     84     |    29%       |    15.31%    |    13.89%        |
+| Multi-Bidirectional LSTM         |  7.89%   |    64%     |   100   |     64     |    55%       |    12.65%    |    12.26%        |
+| Stream LSTM                      |  7.98%   |    64%     |   500   |     64     |     0%       |     97%      |     70.60%       |
+| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |   100   |     20     |   24.13%     |   12.67%     |     16.49%       |
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
