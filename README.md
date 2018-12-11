@@ -1,4 +1,4 @@
-# Label_YT_Videos
+# Classifying Video Labels from Youtube
 
 Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using ResNext/Resnet/InceptionV4 to extract spatial features (pixels) and LSTM/GRU to encode sequential strings (audio) through word embedding. Both algorithms later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainmen, etc.)
 
