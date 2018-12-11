@@ -50,3 +50,25 @@ curl data.yt8m.org/download.py | partition=2/video/test mirror=us python
 ```
 
 The above uses the us mirror. If you are located in Europe or Asia, please swap the mirror flag us with eu or asia, respectively.
+
+## Process data into a program
+```console
+# Video: Trained labels
+fileNumber = 0
+vid_ids_train = []
+mean_rgb_train = []
+mean_audio_train = []
+video_labels_train = []
+for file in video_files_train:
+    print("fileNumber: ", fileNumber)
+    fileNumber += 1
+    for example in tf.python_io.tf_record_iterator(file):
+        tf_example = tf.train.Example.FromString(example)
+        vid_ids_train.append(tf_example.features.feature['id'].bytes_list.value[0].decode(encoding='UTF-8'))
+        video_labels_train.append(tf_example.features.feature['labels'].int64_list.value)
+        mean_rgb_train.append(tf_example.features.feature['mean_rgb'].float_list.value)
+        mean_audio_train.append(tf_example.features.feature['mean_audio'].float_list.value)
+mean_rgb_train = array(mean_rgb_train)
+mean_audio_train = array(mean_audio_train)
+```
+
