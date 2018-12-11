@@ -11,20 +11,20 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of my deep learning algorithms coded in pytorch. If you wish to visualize each algorithm individually, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
 ### Pytorch Report
-|                                  | Loss     |  Accuracy  | Learn Rate | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
-| :---:                            |  :----:  |    :---:   |  :----:    |    :---:   |    :----:    |    :----:    |    :----:        |
-| Neural Net                       |  1.75%    |    45%    |    0.01    |     30     |    29%       |    15.31%    |    13.89%        |
-| Multi-Bidirectional LSTM         |  7.89%   |    64%     |    0.003   |     64     |    55%       |    12.65%    |    12.26%        |
-| Stream LSTM                      |  7.98%   |    64%     |    0.03    |     64     |     0%       |     97%      |     70.60%       |
-| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |  0.00045   |     64     |   24.13%     |   12.67%     |     16.49%       |
+|                                  | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
+| :---:                            |  :----:  |    :---:   |  :----:    | :---: |    :---:   |    :----:    |    :----:    |    :----:        |
+| Neural Net                       |  1.75%    |    45%    |    0.01    | 300   |     30     |    29%       |    15.31%    |    13.89%        |
+| Multi-Bidirectional LSTM         |  7.89%   |    64%     |    0.003   | 300   |     64     |    55%       |    12.65%    |    12.26%        |
+| Stream LSTM                      |  7.98%   |    64%     |    0.03    | 300   |     64     |     0%       |     97%      |     70.60%       |
+| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |  0.00045   | 300   |     64     |   24.13%     |   12.67%     |     16.49%       |
 
 ### Keras Report
-|                                  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
-| :---:                            |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:        |
-| Neural Net                       |  68.5%   |    66.5%   |   300   |     84     |    29%       |    15.31%    |    13.89%        |
-| Multi-Bidirectional LSTM         |  7.89%   |    64%     |   100   |     64     |    55%       |    12.65%    |    12.26%        |
-| Stream LSTM                      |  7.98%   |    64%     |   500   |     64     |     0%       |     97%      |     70.60%       |
-| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |   100   |     20     |   24.13%     |   12.67%     |     16.49%       |
+|                                  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
+| :---:                            |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:       |
+| Neural Net                       |  68.5%   |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
+| Multi-Bidirectional LSTM         |  56%     |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
+| Stream LSTM                      |  58.6%   |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
+| Neual Net + Stream LSTM Concat   |  68.6%   |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
