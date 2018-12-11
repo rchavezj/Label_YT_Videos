@@ -19,12 +19,12 @@ Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 | Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |  0.00045   | 300   |     64     |   24.13%     |   12.67%     |     16.49%       |
 
 ### Keras Report
-|                                  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
-| :---:                            |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:        |
-| Neural Net                       |  68.5%   |    66.5%   |   300   |     84     |    0.13%     |    64.97%    |    14.37%        |
-| Multi-Bidirectional LSTM         |  0.56%   |    77%     |   300   |     64     |    55%       |    12.65%    |    12.26%        |
-| Stream LSTM                      |  7.98%   |    64%     |   500   |     64     |     0%       |     97%      |     70.60%       |
-| Neual Net + Stream LSTM Concat   |  8.91%    |    95%    |   100   |     20     |   24.13%     |   12.67%     |     16.49%       |
+|                                  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
+| :---:                            |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:       |
+| Neural Net                       |  68.5%   |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
+| Multi-Bidirectional LSTM         |  56%     |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
+| Stream LSTM                      |  58.6%   |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
+| Neual Net + Stream LSTM Concat   |  68.6%   |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
