@@ -1,6 +1,6 @@
 # Classifying Video Labels from Youtube
 
-Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using ResNext/Resnet/InceptionV4 to extract spatial features (pixels) and LSTM/GRU to encode sequential strings (audio) through word embedding. Both algorithms later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainmen, etc.)
+Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using deep learning to extract spatial (pixels) and sequential strings (audio) through word embedding. Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainmen, etc.)
 
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
@@ -29,6 +29,12 @@ Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
+
+\begin{align}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{align}
 
 ## Download yt8m dataset
 The total size of the frame-level features is 1.53 Terabytes. They are broken into 3844 shards which can be subsampled to reduce the dataset size. 
