@@ -8,7 +8,7 @@ Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_4.png)
 
-Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithms coded in pytorch. If you wish to visualize each perofance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
+Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithms coded in pytorch. If you wish to visualize each perofance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in keras that can be [found here](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report). More info on wandb can be [found here](https://www.youtube.com/watch?v=zOB_fZPTeiI&t=108s)
 
 ### Pytorch Report
 |                                  | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
