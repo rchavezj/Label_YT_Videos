@@ -1,6 +1,6 @@
 # Classifying Genre Labels from Youtube Videos
 
-Deep Learning algorithm (CNN + RNN) to label youtube videos based on their genre. Using deep learning to extract spatial (pixels) and sequential strings (audio) through word embedding. Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainment, etc.)
+Deep Learning algorithm (CNN + RNN) to label youtube genre labels based on their video frame. Using deep learning to extract spatial (pixels) and sequential strings (audio). Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainment, etc.)
 
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
