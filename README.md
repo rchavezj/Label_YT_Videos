@@ -2,6 +2,8 @@
 
 Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube video based on their video frame. Using deep learning (PyTorch & Keras) to extract spatial (pixels) and sequential strings (audio). Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainment, etc.)
 
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/feature_engineering.png)
+
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
@@ -25,6 +27,10 @@ Above are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 | Multi-Bidirectional LSTM         |  56%     |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
 | Stream LSTM                      |  58.6%   |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
 | Neual Net + Stream LSTM Concat   |  68.6%   |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
+
+## Neural Net with LSTM Stream
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/nn_lstm_stream.png)
+
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
 
