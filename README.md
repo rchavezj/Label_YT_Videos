@@ -1,6 +1,6 @@
 # Classifying Genre Labels from Youtube Videos
 
-Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube video. Used deep learning (PyTorch & Keras) to extract spatial (pixels) and sequential strings (audio). Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainment, etc.). Link to [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/Paper.pdf).
+Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube video. Used deep learning (PyTorch & Keras) to extract spatial (pixels) and sequential strings (audio). Later concatenate onto a fully connected network to output the video label genre (E.g. Games, Art & Entertainment, etc.). Link to [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/feature_engineering.png)
 
@@ -30,12 +30,12 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 | Neual Net + Stream LSTM Concat   |  68.6%   |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
 ## Neural Net with LSTM Stream
-Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/Paper.pdf).
+Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/nn_lstm_stream.png)
 
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
-Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/Paper.pdf).
+Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
 
