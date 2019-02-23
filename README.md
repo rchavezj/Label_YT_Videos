@@ -34,7 +34,6 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 ## Best Deep Learning Model: <br /> Neural Net + Stream LSTM Concatenated (Tensorboard)
-
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
 
