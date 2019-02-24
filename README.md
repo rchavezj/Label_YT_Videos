@@ -194,6 +194,7 @@ https://stackoverflow.com/questions/44563418/low-gpu-usage-by-keras-tensorflow
 [38] Krishnan, Gokula. “Difference between the Functional API and the Sequential
           API”. Google group discussion. 2016.  
           https://groups.google.com/forum/#!topic/keras-users/C2qX_Umu0hU
+	  
 [39] Peterstone. “Saving an Object (Data persistence).” Stackoverflow discussion. 2010.
 	https://stackoverflow.com/questions/4529815/saving-an-object-data-persistence
 
