@@ -159,6 +159,7 @@ Learning”. Techcrunch Article. 2018. https://techcrunch.com/2018/05/31/weights
 [28] Vincent, James. “NVIDIA has created the first video game demo using AI-generated 
 Graphics.” The verge. 2018. 
 https://www.theverge.com/2018/12/3/18121198/ai-generated-video-game-graphics-nvidia-driving-demo-neurips
+
 [29] Mueller, Franziska. “GANerated Hands for Real-Time 3D Hand Tracking from 
 Monocular RGB.” CVPR. 2018
 
