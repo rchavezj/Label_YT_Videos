@@ -6,7 +6,7 @@ Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube v
 
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
-Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in pytorch. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same deep learning model in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report). 
+Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in pytorch. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same models in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report). 
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
