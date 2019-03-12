@@ -12,6 +12,8 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_4.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_cpu.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_gpu.png)
 
 ### PyTorch Report
 |                                  | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
