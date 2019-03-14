@@ -86,7 +86,7 @@ Aberystwyth University. Dec, 2015.
 [4] Krizhevsky, Alex. “ImageNet Classification with Deep Convolutional Neural Network.” 
 Neural Information Processing System (NIPS). 2012. 
 
-[5] C. Feichtenhofer, A. Pinz, and A. Zisserman. “Convolutional two-stream network 
+[5] C.Feichtenhofer, A. Pinz, and A. Zisserman. “Convolutional two-stream network 
 fusion for video action recognition.” CVPR, 2016. 
 
 [6] Jia, Chengcheng. “Stacked Denoising Tensor Auto-Encoder for Action Recognition	
