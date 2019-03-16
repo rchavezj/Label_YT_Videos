@@ -222,3 +222,6 @@ https://venturebeat.com/2018/10/02/facebook-launches-pytorch-1-0-integrations-fo
 
 [46] Philipp Schmidt, kaggle, 
 	https://www.kaggle.com/philschmidt/youtube8m-eda
+	
+[47] NLP’s ImageNet moment has arrived, 2018
+	http://ruder.io/nlp-imagenet/
