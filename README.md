@@ -13,6 +13,9 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_4.png)
 
+<img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_cpu.png" width="441.75" height="250"> <img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_gpu.png" width="441.75" height="250">
+
+
 ### PyTorch Report
 |                                  | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
 | :---:                            |  :----:  |    :---:   |  :----:    | :---: |    :---:   |    :----:    |    :----:    |    :----:        |
@@ -83,7 +86,7 @@ Aberystwyth University. Dec, 2015.
 [4] Krizhevsky, Alex. “ImageNet Classification with Deep Convolutional Neural Network.” 
 Neural Information Processing System (NIPS). 2012. 
 
-[5] C. Feichtenhofer, A. Pinz, and A. Zisserman. “Convolutional two-stream network 
+[5] C.Feichtenhofer, A. Pinz, and A. Zisserman. “Convolutional two-stream network 
 fusion for video action recognition.” CVPR, 2016. 
 
 [6] Jia, Chengcheng. “Stacked Denoising Tensor Auto-Encoder for Action Recognition	
@@ -219,3 +222,6 @@ https://venturebeat.com/2018/10/02/facebook-launches-pytorch-1-0-integrations-fo
 
 [46] Philipp Schmidt, kaggle, 
 	https://www.kaggle.com/philschmidt/youtube8m-eda
+	
+[47] NLP’s ImageNet moment has arrived, 2018
+	http://ruder.io/nlp-imagenet/
