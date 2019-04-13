@@ -28,11 +28,11 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 ### Keras Report
 |                                  | Opt  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
-| :---:                            |  :----:    |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----: | 
-| Neural Net                       |  Adam     |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
-| Multi-Bidirectional LSTM         |  Adam     |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
-| Stream LSTM                      |  SGD      |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
-| Neual Net + Stream LSTM Concat   |  Adam     |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
+| :---:                            |  :----:   |  :----:   |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----: | 
+| Neural Net                       |  Adam     |    68.5%  |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
+| Multi-Bidirectional LSTM         |  Adam     |    56%  |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
+| Stream LSTM                      |  SGD      |    58.6%  |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
+| Neual Net + Stream LSTM Concat   |  Adam     |    68.6%  |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
 ## Neural Net with LSTM Stream
 Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
