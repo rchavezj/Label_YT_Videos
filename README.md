@@ -27,11 +27,11 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 ### Keras Report
-|                                  | Optimizer  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
+|                                  | Opt  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
 | :---:                            |  :----:    |  :----:  |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----:       |
 | Neural Net                       |  Adam     |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
 | Multi-Bidirectional LSTM         |  Adam     |    77%     |   300   |     64     |     0%       |    99.17%    |    31.19%       |
-| Stream LSTM                      |  SGD     |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
+| Stream LSTM                      |  SGD      |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
 | Neual Net + Stream LSTM Concat   |  Adam     |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
 ## Neural Net with LSTM Stream
