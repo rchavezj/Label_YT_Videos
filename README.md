@@ -13,6 +13,10 @@ The pipeline would be:</br>
 (4) Output a vector from a model with one element containing the highest probability for the predicted genre label. </br>
 (5) See which model from their respected framework is most feasible </br>
 
+***
+
+Contribution: After the data was processed and visualized (histogram & similarity matrix) with the help of Kaggle peers [46], I contributed the following: compute power, compare models, feature engineering, integration, algorithms, optimization, CPU/GPU parallel distribution (PyTorch), and evaluation performance (lost, accuracy, CPU/GPU/hardware usage).
+
 
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
