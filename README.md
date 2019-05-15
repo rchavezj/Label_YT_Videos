@@ -8,7 +8,7 @@ Goal for my thesis: Teach an AI to label a genre (E.g., Makeup, Games, Art & Ent
 
 The pipeline would be:
 ***
-(1) Youtube videos uploaded from users \n
+(1) Youtube videos uploaded from users </br>
 (2) Google compressing the content \n
 (3) Researchers reconstructing the data and features for a machine learning pipeline 
 (4) Output a vector from a model with one element containing the highest probability for the predicted genre label. \n
