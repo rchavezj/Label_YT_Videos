@@ -227,3 +227,18 @@ https://venturebeat.com/2018/10/02/facebook-launches-pytorch-1-0-integrations-fo
 	
 [47] NLP’s ImageNet moment has arrived, 2018
 	http://ruder.io/nlp-imagenet/
+	
+[48] T.Q. Chen, Ricky and Rubanova, Yulia. “Neural Ordinary Differential Equations”, 
+Neuralps Conference. 2019.
+
+[49] Talby, David. “Why Machine Learning Models Crash and Burn In Production”. 
+Forbes.com.https://www.forbes.com/sites/forbestechcouncil/2019/04/03/why-mac
+hine-learning-models-crash-and-burn-in-production/#48dd10272f43
+
+[50] Makadia, Mitul. “Top 8 Deep Learning Frameworks”. Dzone.com
+	https://dzone.com/articles/8-best-deep-learning-frameworks
+
+[51] Aggarwal, Keshav. “A brief guide to Tensorflow Eager Execution”. Medium.com
+https://towardsdatascience.com/eager-execution-tensorflow-8042128ca7be?gi=6
+4b7427864b6
+
