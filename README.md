@@ -59,9 +59,11 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 ### Keras Report
-![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png)
-![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_results_pt_1.png)
-![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_accuracy.png)
+
+<center><img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png" width="850"></center>
+
+<img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_loss.png" width="430"/><img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_accuracy.png" width="430"/>
+
 
 |                                  | Opt  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
 | :---:                            |  :----:   |  :----:   |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----: | 
