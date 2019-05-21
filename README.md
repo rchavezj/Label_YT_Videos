@@ -7,11 +7,11 @@ Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube v
 <strong> Goal for my thesis </strong>: Teach an AI to label a genre (E.g., Makeup, Games, Art & Entertainment, etc.) on a youtube video using a series of deep learning algorithms and compare each one to see which among is most feasible for research and scaled into production. This algorithm can potentially automate repetitive labor organizing youtube videos with similar content in a recommendation search engine and classify copyright material. I will be using Google’s yt8m dataset [1] initially 0.5 petabyte big, compressed down to 1.5 terabyte due to download limitations for researchers. There will be two types of features: video-level (2-dimensions) and frame-level (3-dimensions) data. I coded eight deep learning models: 4 in Keras and the same models in PyTorch to compare not only models but frameworks against each other to compute the data: more details provided under <strong> Comparing models & frameworks </strong> section. 
 
 <u> The pipeline would be </u>: </br>
->> (1) Youtube videos uploaded from users </br></br>
->> (2) Google compressing the content</br></br>
->> (3) Researchers reconstructing the data and features for a machine learning pipeline </br></br>
->> (4) Output a vector from a model with one element containing the highest probability for the predicted genre label. </br></br>
->> (5) See which model from their respected framework is most feasible </br> </br>
+> (1) Youtube videos uploaded from users </br></br>
+> (2) Google compressing the content</br></br>
+> (3) Researchers reconstructing the data and features for a machine learning pipeline </br></br>
+> (4) Output a vector from a model with one element containing the highest probability for the predicted genre label. </br></br>
+> (5) See which model from their respected framework is most feasible </br> </br>
 
 
 <strong> Contribution </strong>: After the data was processed and visualized (histogram & similarity matrix) with the help of Kaggle peers [46], I contributed the following: feature engineering, comparing models, comparing frameworks (Keras & PyTorch), integration, optimization, implemented distributed training in PyTorch, and evaluated performance (lost, accuracy, CPU/GPU/Hardware usage). </br> </br>
@@ -21,9 +21,9 @@ Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube v
 
 <strong> Integration </strong>: We are dealing with compressed data containing two important features we need to aggregate: video-level and frame-level content. We need to integrate three different algorithms into my pipeline:
 
->> (1)Reconstruct the compressed content [1] with initialized parameters. The number of features is smaller than the number of class labels (output genre labels) which is why I had to reconstruct the data. Add more dimensions into the input data. More details are available in the paper under the <strong> Feature Engineering </strong> section. The output of the reconstructed features in step (1) are separately sent into their respected models in (2) and (3).  </br></br>
->> (2) Compute sequential data (frame-level) for each video gathered from yt8m. Each video at least 100 second long is going to be utilized within the dataset. We can use temporal models (Recurrent Neural Net).  </br></br>
->> (3) Instead of 100 second per video, Google created video-level features extracting a task-independent fixed-length vector from frame-level. In other words video-level features have one less dimension from compressing frame-level sequential content. We can train this data using classifiers like logistic or any non-linear design.    </br></br>
+> (1)Reconstruct the compressed content [1] with initialized parameters. The number of features is smaller than the number of class labels (output genre labels) which is why I had to reconstruct the data. Add more dimensions into the input data. More details are available in the paper under the <strong> Feature Engineering </strong> section. The output of the reconstructed features in step (1) are separately sent into their respected models in (2) and (3).  </br></br>
+> (2) Compute sequential data (frame-level) for each video gathered from yt8m. Each video at least 100 second long is going to be utilized within the dataset. We can use temporal models (Recurrent Neural Net).  </br></br>
+> (3) Instead of 100 second per video, Google created video-level features extracting a task-independent fixed-length vector from frame-level. In other words video-level features have one less dimension from compressing frame-level sequential content. We can train this data using classifiers like logistic or any non-linear design.    </br></br>
 
 Both <strong> (2) </strong> and <strong>(3)</strong> models contain a softmax approximator model to determine the label of a genre from a youtube video. You can develop an <strong>algorithm (section below) </strong> with both models separately or combined (concatenate). 
 
@@ -34,10 +34,10 @@ Both <strong> (2) </strong> and <strong>(3)</strong> models contain a softmax ap
 
 <strong> Algorithms </strong>: Below are four algorithms I coded to aggregate my data. Later I compare each framework (PyTorch & Keras) with the same models to see which one was most efficient for research and or production. </br>
 
->> (1) Fully Connected Net: Aggregating compressed spatial features from youtube videos </br></br>
->> (2) Bidirectional LSTM: We are using a Bidirectional LSTM to aggregate sequential content of video frames. Each youtube video has been cut down to 100 seconds of frames. Any video less than 100 seconds is not part of the dataset to balance the distribution. For example, if there was a 10 second youtube video of nascar-racing inside the dataset while another video with 100 seconds of a video game of cars, the algorithm will likely have a bias prediction labeling a nascar-race as a video game. </br></br>
->> (3) Stream-LSTM is similar to Bidirectional except we have the pipeline for audio and RGB. </br></br>
->> (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
+> (1) Fully Connected Net: Aggregating compressed spatial features from youtube videos </br></br>
+> (2) Bidirectional LSTM: We are using a Bidirectional LSTM to aggregate sequential content of video frames. Each youtube video has been cut down to 100 seconds of frames. Any video less than 100 seconds is not part of the dataset to balance the distribution. For example, if there was a 10 second youtube video of nascar-racing inside the dataset while another video with 100 seconds of a video game of cars, the algorithm will likely have a bias prediction labeling a nascar-race as a video game. </br></br>
+> (3) Stream-LSTM is similar to Bidirectional except we have the pipeline for audio and RGB. </br></br>
+> (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
 
 
 
