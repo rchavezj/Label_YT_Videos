@@ -39,13 +39,11 @@ Both <strong> (2) </strong> and <strong>(3)</strong> models contain a softmax ap
 > (3) Stream-LSTM is similar to Bidirectional except we have the pipeline for audio and RGB. </br></br>
 > (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
 
-
-
-
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 
-Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in pytorch. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same models in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report).  
+Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in PyTorch and in Keras. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same models in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report).  
 
+### PyTorch Report
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
@@ -53,8 +51,6 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 <img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_cpu.png" width="420.50" height="250"><img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_gpu.png" width="420.50" height="250">
 
-
-### PyTorch Report
 |                                  |   Optimizer   | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
 | :---:                            | :----:   |  :----:  |    :---:   |  :----:    | :---: |    :---:   |    :----:    |    :----:    |    :----:        |
 | Neural Net                       |  SGD  |  1.75%    |    45%    |    0.01    | 300   |     30     |    29%       |    15.31%    |    13.89%        |
@@ -65,6 +61,9 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 ### Keras Report
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_results_pt_1.png)
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_accuracy.png)
+
 |                                  | Opt  | Loss     |  Accuracy  |  Epoch  | Batch Size |   GPU Usage  |   CPU Usage  |  System Memory  |
 | :---:                            |  :----:   |  :----:   |    :---:   | :----:  |    :---:   |    :----:    |    :----:    |    :----: | 
 | Neural Net                       |  Adam     |    68.5%  |    66%     |   300   |     84     |     0.13%    |    64.97%    |    14.37%       |
