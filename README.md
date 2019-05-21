@@ -6,7 +6,7 @@ Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube v
 
 <strong> Goal for my thesis </strong>: Teach an AI to label a genre (E.g., Makeup, Games, Art & Entertainment, etc.) on a youtube video using a series of deep learning algorithms and compare each one to see which among is most feasible for research and scaled into production. This algorithm can potentially automate repetitive labor organizing youtube videos with similar content in a recommendation search engine and classify copyright material. I will be using Google’s yt8m dataset [1] initially 0.5 petabyte big, compressed down to 1.5 terabyte due to download limitations for researchers. There will be two types of features: video-level (2-dimensions) and frame-level (3-dimensions) data. I coded eight deep learning models: 4 in Keras and the same models in PyTorch to compare not only models but frameworks against each other to compute the data: more details provided under <strong> Comparing models & frameworks </strong> section. 
 
-<u> The pipeline would be </u>: </br>
+<u>The pipeline would be</u>: </br>
 > (1) Youtube videos uploaded from users </br></br>
 > (2) Google compressing the content</br></br>
 > (3) Researchers reconstructing the data and features for a machine learning pipeline </br></br>
