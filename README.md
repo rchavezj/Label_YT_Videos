@@ -36,7 +36,7 @@ Both <strong> (2) </strong> and <strong>(3)</strong> models contain a softmax ap
 
 > (1) Fully Connected Net: Aggregating compressed spatial features from youtube videos </br></br>
 > (2) Bidirectional LSTM: We are using a Bidirectional LSTM to aggregate sequential content of video frames. Each youtube video has been cut down to 100 seconds of frames. Any video less than 100 seconds is not part of the dataset to balance the distribution. For example, if there was a 10 second youtube video of nascar-racing inside the dataset while another video with 100 seconds of a video game of cars, the algorithm will likely have a bias prediction labeling a nascar-race as a video game. </br></br>
-> (3) Stream-LSTM is similar to Bidirectional except we have the approximators for audio and RGB are separately sent into their own fully connected nets. The approximators are later combined into a concatenate function to find the average. For example if the approximator for one genre label in a rgb vector was 79% while the audio was 99%, concatenate both would be 89%.  </br></br>
+> (3) Stream-LSTM is similar to Bidirectional except we have the approximators for audio and rgb separately sent into their own fully connected nets. The approximators are later combined into a concatenate function to find the average. For example if the approximator for one genre label in a rgb vector was 79% while the audio was 99%, concatenate both would be 89%.   </br></br>
 > (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
 
 ## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
