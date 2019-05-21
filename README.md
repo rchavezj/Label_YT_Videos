@@ -49,8 +49,6 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_4.png)
 
-<img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_cpu.png" width="420.50" height="250"><img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_gpu.png" width="420.50" height="250">
-
 |                                  |   Optimizer   | Loss     |  Accuracy  | Learn Rate | Epoch | Batch Size |   GPU Usage  |   CPU Usage  |   System Memory  |
 | :---:                            | :----:   |  :----:  |    :---:   |  :----:    | :---: |    :---:   |    :----:    |    :----:    |    :----:        |
 | Neural Net                       |  SGD  |  1.75%    |    45%    |    0.01    | 300   |     30     |    29%       |    15.31%    |    13.89%        |
@@ -61,6 +59,7 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 ### Keras Report
+![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_accuracy.png)
 
