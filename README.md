@@ -22,9 +22,7 @@ Deep Learning algorithm (Deep Neural Net + LSTM) to label a genre on a youtube v
 <strong> Integration </strong>: We are dealing with compressed data containing two important features we need to aggregate: video-level and frame-level content. We need to integrate three different algorithms into my pipeline:
 
 >> (1)Reconstruct the compressed content [1] with initialized parameters. The number of features is smaller than the number of class labels (output genre labels) which is why I had to reconstruct the data. Add more dimensions into the input data. More details are available in the paper under the <strong> Feature Engineering </strong> section. The output of the reconstructed features in step (1) are separately sent into their respected models in (2) and (3).  </br></br>
-
 >> (2) Compute sequential data (frame-level) for each video gathered from yt8m. Each video at least 100 second long is going to be utilized within the dataset. We can use temporal models (Recurrent Neural Net).  </br></br>
-
 >> (3) Instead of 100 second per video, Google created video-level features extracting a task-independent fixed-length vector from frame-level. In other words video-level features have one less dimension from compressing frame-level sequential content. We can train this data using classifiers like logistic or any non-linear design.    </br></br>
 
 Both <strong> (2) </strong> and <strong>(3)</strong> models contain a softmax approximator model to determine the label of a genre from a youtube video. You can develop an <strong>algorithm (section below) </strong> with both models separately or combined (concatenate). 
