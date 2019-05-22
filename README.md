@@ -71,12 +71,12 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 | Stream LSTM                      |  SGD      |    58.6%  |    84%     |   500   |     64     |     0%       |    93.37%    |    26.07%       |
 | Neual Net + Stream LSTM Concat   |  Adam     |    68.6%  |    73%     |   100   |     20     |     0%       |    96.84%    |    28.45%       |
 
-## Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level)
+## Fully Connected Net concatenated with a Stream-LSTM
 Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/nn_lstm_stream.png)
  
 
-## Best Deep Learning Model: <br /> Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level) (Tensorboard)
+## Best Deep Learning Model: <br /> Fully Connected Net concatenated with a Stream-LSTM (Tensorboard)
 Documentations for my designs are available on [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf).
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
