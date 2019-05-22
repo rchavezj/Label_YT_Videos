@@ -38,11 +38,11 @@ Both models <strong>(2)</strong> and <strong>(3)</strong> models contain a softm
 > (3) Stream-LSTM is similar to Bidirectional except we have the approximators for audio and rgb separately sent into their own fully connected nets. The approximators are later combined into a concatenate function to find the average. For example if the approximator for one genre label in a rgb vector was 79% while the audio was 99%, concatenating both would be 89%.   </br></br>
 > (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
 
-## [Wandb Results](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
+## Wandb Results
 
 Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in PyTorch and in Keras. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same models in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report).  
 
-### PyTorch Report
+### [PyTorch Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_1.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_2.png)
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/pytorch_results_pt_3.png)
@@ -57,7 +57,7 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 
-### Keras Report
+### [Keras Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
 <img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png">
 
