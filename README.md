@@ -291,3 +291,5 @@ https://datascience.stackexchange.com/users/40180/arthurdent
 https://medium.com/sfu-big-data/evolution-of-natural-language-generation-c5d72
 95d6517
 
+[54] Madsen, Andreas. “Visualizing memorization in RNNs.” Distill journal
+	2019. https://distill.pub/2019/memorization-in-rnns/
