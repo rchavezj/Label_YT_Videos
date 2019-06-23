@@ -287,3 +287,7 @@ https://towardsdatascience.com/eager-execution-tensorflow-8042128ca7be?gi=6
 possible”. Datascience.stackexchange.com article. 
 https://datascience.stackexchange.com/users/40180/arthurdent
 
+[53] Sunnak, Abhishek. “Evolution of Natural Language Generation”. Medium Article
+https://medium.com/sfu-big-data/evolution-of-natural-language-generation-c5d72
+95d6517
+
