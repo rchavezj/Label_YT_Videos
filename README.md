@@ -1,3 +1,6 @@
+[Czech Technical University in Prague](https://dcgi.fel.cvut.cz/home/sykorad/styleblit.html) and [Two Minute Papers](https://www.youtube.com/watch?v=S7HlxaMmWAU)
+
+
 # Classifying Video Labels from Youtube 
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/feature_engineering.png)
