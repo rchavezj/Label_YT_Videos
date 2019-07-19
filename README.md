@@ -293,3 +293,13 @@ https://medium.com/sfu-big-data/evolution-of-natural-language-generation-c5d72
 
 [54] Madsen, Andreas. “Visualizing memorization in RNNs.” Distill journal
 	2019. https://distill.pub/2019/memorization-in-rnns/
+
+
+[55] Rosenblatt, Frank. “The Perceptron: A Probabilistic Model for information storage 
+and organization in the brain”. Cornell Aeronautical Laboratory. 1958. 
+	https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf
+
+
+[56] Geirhos, Robert. “Imagenet-Trained CNNs are biased towards texture; increasing 
+	shape bias improve accuracy and robustness”. University of Tubingen
+	ICLR 2019. 
