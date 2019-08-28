@@ -61,7 +61,7 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 
-### [Keras Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
+### [Tensorflow/Keras Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
 <img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png">
 
