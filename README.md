@@ -303,3 +303,6 @@ and organization in the brain”. Cornell Aeronautical Laboratory. 1958.
 [56] Geirhos, Robert. “Imagenet-Trained CNNs are biased towards texture; increasing 
 	shape bias improve accuracy and robustness”. University of Tubingen
 	ICLR 2019. 
+	
+[57] Jeremy Howard: Deep Learning Frameworks - TensorFlow, PyTorch, fast.ai | AI Podcast Clips
+	https://www.youtube.com/watch?v=XHyASP49ses
