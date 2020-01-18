@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/feature_engineering.png)
 
-<strong> Goal</strong>: Teach an AI to label a genre (E.g., Makeup, Games, Art & Entertainment, etc.) on a youtube video using a series of deep learning algorithms and compare each one to understand their strengths and weaknesses, and scalability properties. This algorithm can potentially automate repetitive labor organizing youtube videos with similar content in a recommendation search engine and classify copyright material. I will be using Google’s yt8m dataset [1] initially 0.5 petabytes of data, compressed to 1.5 terabytes for the research dataset. There will be two types of features: video-level (2-dimensions) and frame-level (3-dimensions) data. I coded eight deep learning models: 4 in Keras and the same models in PyTorch to compare not only models but frameworks against each other. More details provided under <strong> [Comparing models & frameworks](#Comparing-models-and-frameworks) </strong> section. Link to [my paper](https://github.com/rchavezj/Label_YT_Videos/blob/master/Paper.pdf). Link to [my code](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/Algorithms.ipynb)
+<strong> Goal</strong>: Taught an AI to label a genre (E.g., Makeup, Games, Art & Entertainment, etc.) on a youtube video (Audio, RGB, Frames) using a series of deep learning algorithms and compare each one to understand their strengths and weaknesses, and scalability properties. This algorithm can potentially automate repetitive labor organizing youtube videos with similar content in a recommendation search engine and classify copyright material. I will be using Google’s yt8m dataset [1] initially 0.5 petabytes of data, compressed to 1.5 terabytes for the research dataset. There will be two types of features: video-level (2-dimensions) and frame-level (3-dimensions) data. I coded eight deep learning models: 4 in Keras and the same models in PyTorch to compare not only models but frameworks against each other. More details provided under <strong> [Comparing models & frameworks](#Comparing-models-and-frameworks) </strong> section. Link to the <strong>[code](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/Algorithms.ipynb)</strong>
 
 <u>The pipeline would be</u>: </br>
 > (1) Youtube videos uploaded from users </br></br>
@@ -17,7 +17,7 @@ Based on interactions and learning from other Kaggle competitors, I applied a be
 
 
 ### Comparing models and frameworks: 
-I coded eight deep learning models: 4 in Keras and the same models in PyTorch. I chose to compare not only models but frameworks as well based on research I did on algorithms crashing in production [49]. Tensorflow (Keras) has the largest user base and most traction currently. I want to compare it with PyTorch which is an imperative framework that performs computation as you type it.  Tensorflow (Keras) uses symbolic programming: only computing your code at the end of each graph session [38]. Tensorflow is evolving to become more “PyTorch” like with eager execution [51], however that’s still in alpha and didn’t exist at the time time my project started. The value of comparing frameworks was also recognized by google engineers as they were working along a similar path in parallel to my work [51]. More information about the difference between each framework and their performance is written in my paper. My experiments reveal surprising results.  
+I coded eight deep learning models: 4 in Keras and the same models in PyTorch. I chose to compare not only models but frameworks as well based on research I did on algorithms crashing in production [49]. Tensorflow (Keras) has the largest user base and most traction currently. I want to compare it with PyTorch which is an imperative framework that performs computation as you type it.  Tensorflow (Keras) uses symbolic programming: only computing your code at the end of each graph session [38]. Tensorflow is evolving to become more “PyTorch” like with eager execution [51], however that’s still in alpha and didn’t exist at the time my project started. The value of comparing frameworks was also recognized by google engineers as they were working along a similar path in parallel to my work [51]. More information about the difference between each framework and their performance is written in my paper. My experiments reveal surprising results.  
 
 ### Integration: 
 We are dealing with compressed data containing two important features we need to aggregate: video-level and frame-level content. We need to integrate three different algorithms into the pipeline:
@@ -42,7 +42,7 @@ Below are four algorithms I coded to aggregate my data. Later I compare each fra
 > (3) Stream-LSTM is similar to Bidirectional except we have the approximators for audio and rgb separately sent into their own fully connected nets. The approximators are later combined into a concatenate function to find the average. For example if the approximator for one genre label in a rgb vector was 79% while the audio was 99%, concatenating both would be 89%.   </br></br>
 > (4) Fully Connected Net (Video-level) concatenated with a Stream-LSTM (frame-level). It’s a combination of Algorithm (1) & (3) softmax approximation using concatenation.
 
-## Wandb Results
+## Weights & Biasis (Wandb) Results
 
 Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the performance of each deep learning algorithm coded in PyTorch and in Keras. If you wish to visualize the performance, [click here!](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FPytorch%20Report) I also done experiments for the same models in [keras](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report).  
 
@@ -61,7 +61,7 @@ Below are graphs I gathered from the app wandb (Weights & Biasis) to monitor the
 
 
 
-### [Keras Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
+### [Tensorflow/Keras Report](https://app.wandb.ai/rchavezj/label_yt_videos/reports?view=rchavezj%2FKeras%20Report)
 
 <img src="https://github.com/rchavezj/Label_YT_Videos/blob/master/wandb_results/keras_parallel_coordinates.png">
 
@@ -85,7 +85,7 @@ Documentations for my designs are available on [my paper](https://github.com/rch
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
 
-## Download yt8m dataset
+## Download yt8m dataset [1]
 The total size of the frame-level features is 1.53 Terabytes. They are broken into 3844 shards which can be subsampled to reduce the dataset size. 
 
 To download the Frame-level dataset using the download script, navigate your terminal to a directory where you would like to download the data. For example:
@@ -287,3 +287,22 @@ https://towardsdatascience.com/eager-execution-tensorflow-8042128ca7be?gi=6
 possible”. Datascience.stackexchange.com article. 
 https://datascience.stackexchange.com/users/40180/arthurdent
 
+[53] Sunnak, Abhishek. “Evolution of Natural Language Generation”. Medium Article
+https://medium.com/sfu-big-data/evolution-of-natural-language-generation-c5d72
+95d6517
+
+[54] Madsen, Andreas. “Visualizing memorization in RNNs.” Distill journal
+	2019. https://distill.pub/2019/memorization-in-rnns/
+
+
+[55] Rosenblatt, Frank. “The Perceptron: A Probabilistic Model for information storage 
+and organization in the brain”. Cornell Aeronautical Laboratory. 1958. 
+	https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf
+
+
+[56] Geirhos, Robert. “Imagenet-Trained CNNs are biased towards texture; increasing 
+	shape bias improve accuracy and robustness”. University of Tubingen
+	ICLR 2019. 
+	
+[57] Jeremy Howard: Deep Learning Frameworks - TensorFlow, PyTorch, fast.ai | AI Podcast Clips
+	https://www.youtube.com/watch?v=XHyASP49ses
