@@ -85,7 +85,7 @@ Documentations for my designs are available on [my paper](https://github.com/rch
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/code/tensorboard_images/graph_nn_stream_lstm.png)
 
 
-## Download yt8m dataset
+## Download yt8m dataset [1]
 The total size of the frame-level features is 1.53 Terabytes. They are broken into 3844 shards which can be subsampled to reduce the dataset size. 
 
 To download the Frame-level dataset using the download script, navigate your terminal to a directory where you would like to download the data. For example:
