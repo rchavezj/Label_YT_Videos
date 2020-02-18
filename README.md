@@ -1,4 +1,4 @@
-# Classifying Video Labels from Youtube 
+# Classifying Video Labels from Youtube (PyTorch & Keras)
 
 ![alt text](https://github.com/rchavezj/Label_YT_Videos/blob/master/resource/feature_engineering.png)
 
